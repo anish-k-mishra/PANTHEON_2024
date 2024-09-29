@@ -62,27 +62,27 @@ export function TimelineDemo() {
         <div className="text-white">
           <div className="text-4xl">Flagship Events and Speaker Sessions</div>
           <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-            ✅Hatch From Scratch
+            ➢ Hatch From Scratch
           </div>
           <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-            ✅Droid Trooper
+            ➢ Droid Trooper
           </div>
           <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-            ✅Bot Soccer
+            ➢ Bot Soccer
           </div>
           <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-            ✅Dr. Pradeep Chatterjee, Chief Digital Officer, Motherson’s Group,
+            ➢ Dr. Pradeep Chatterjee, Chief Digital Officer, Motherson’s Group,
             Invited lecture on the theme of Science & Technology between 4:30 PM
             to 5:30 PM at Seminar hall of R&D building.
           </div>
           <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-            ✅Mr. Birju Toppo, Film Maker, Invited lecture on the theme of
+            ➢ Mr. Birju Toppo, Film Maker, Invited lecture on the theme of
             Science & Technology involved in Film Making for Societal
             Development betwen 12:00 PM to 1:00 PM at Seminar hall of R&D
             building.
           </div>
           <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-            ✅Dr. Ali Imam Khan, President,Science for Society, Invited lecture
+            ➢ Dr. Ali Imam Khan, President,Science for Society, Invited lecture
             on the theme of Science & Technology for Societal Development
             netween 4:30 PM to 5:30 PM at Seminar hall of R&D building.
           </div>
@@ -126,22 +126,22 @@ export function TimelineDemo() {
           <div className="mb-8 ">
             <div className="text-4xl">Flagship Events and Speaker Sessions</div>
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Bot Soccer
+              ➢ Bot Soccer
             </div>
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅Mr & Mrs. Pantheon
+              ➢Mr & Mrs. Pantheon
             </div>
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Codezilla
+              ➢ Codezilla
             </div>
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Cube-De-Cemento
+              ➢ Cube-De-Cemento
             </div>
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Dr. D. N. S. Anand,General Secretary,Science for
-              Society,Invited lecture on the theme of Science & Technology for
-              Societal Development between 11:00 AM to 12:00 PM at Seminar hall
-              of R&D building.
+              ➢ Dr. D. N. S. Anand,General Secretary,Science for Society,Invited
+              lecture on the theme of Science & Technology for Societal
+              Development between 11:00 AM to 12:00 PM at Seminar hall of R&D
+              building.
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4">
