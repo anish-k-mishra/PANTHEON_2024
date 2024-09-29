@@ -146,6 +146,12 @@ export function Login() {
         )}
         <div className="bg-gradient-to-r from-transparent via-neutral-300 to-transparent my-4 h-[1px] w-full" />
       </form>
+      <p className="text-center text-white mt-4">
+        Not registerd yet?{" "}
+        <a href="/create" className="text-pink-500 underline">
+          Register Here
+        </a>{" "}
+      </p>
     </div>
   );
 }

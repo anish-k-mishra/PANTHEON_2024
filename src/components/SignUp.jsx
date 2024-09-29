@@ -203,6 +203,19 @@ export function SignUp() {
         )}
         <div className="bg-gradient-to-r from-transparent via-neutral-300 to-transparent my-4 h-[1px] w-full" />
       </form>
+      <p className="text-center text-white mt-4">
+        Go to{" "}
+        <a href="/sign-in" className="text-pink-500 underline">
+          Login Page
+        </a>{" "}
+        after otp verification is successfull.
+      </p>
+      <p className="text-center text-white mt-4">
+        Already an user{" "}
+        <a href="/sign-in" className="text-pink-500 underline">
+          Login Page
+        </a>{" "}
+      </p>
     </div>
   );
 }
