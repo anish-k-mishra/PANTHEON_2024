@@ -1,5 +1,5 @@
 "use client";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Lenis from "@studio-freight/lenis"; // Import Lenis without /react
 import {
   motion,
@@ -10,13 +10,12 @@ import {
 } from "framer-motion";
 import { SiSpacex } from "react-icons/si";
 import { FiArrowRight, FiMapPin } from "react-icons/fi";
-import { useRef } from "react";
 import { CNavbar } from "./CNavbar"; // Import your updated CNavbar
 import mhero from "../assets/mhero.jpg";
 
 export const SmoothScrollHero = () => {
   useEffect(() => {
-    // Initialize Lenis
+    // Initialize Lenis for smooth scrolling
     const lenis = new Lenis({
       lerp: 0.05, // Configure options as needed
     });
@@ -100,6 +99,7 @@ const ParallaxImages = () => {
         end={200}
         className="w-1/3"
       />
+      {/* Uncomment the following for more images if needed */}
       {/* <ParallaxImg
         src="https://images.unsplash.com/photo-1446776709462-d6b525c57bd3?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         alt="An example of a space launch"
@@ -128,15 +128,34 @@ const ParallaxImages = () => {
 const ParallaxImg = ({ className, alt, src, start, end }) => {
   const ref = useRef(null);
 
+  // Detect mobile screen
+  const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
+
+  // Adjust the scroll behavior for mobile
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: [`${start}px end`, `end ${end * -1}px`],
+    offset: isMobile
+      ? [`${start / 2}px end`, `end ${end / 2}px`]
+      : [`${start}px end`, `end ${end}px`],
   });
 
-  const opacity = useTransform(scrollYProgress, [0.75, 1], [1, 0]);
-  const scale = useTransform(scrollYProgress, [0.75, 1], [1, 0.85]);
+  // Adjust opacity and scale based on the screen size
+  const opacity = useTransform(
+    scrollYProgress,
+    [0.75, 1],
+    isMobile ? [1, 0.8] : [1, 0]
+  );
+  const scale = useTransform(
+    scrollYProgress,
+    [0.75, 1],
+    isMobile ? [1, 0.95] : [1, 0.85]
+  );
 
-  const y = useTransform(scrollYProgress, [0, 1], [start, end]);
+  const y = useTransform(
+    scrollYProgress,
+    [0, 1],
+    isMobile ? [start / 2, end / 2] : [start, end]
+  );
   const transform = useMotionTemplate`translateY(${y}px) scale(${scale})`;
 
   return (
