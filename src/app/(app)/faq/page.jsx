@@ -160,8 +160,8 @@ const Faq = () => {
               BITians are proud of the fest and they do so in style. Every year
               the official T-shirt for Pantheon is released which represents the
               fest and unity of the college. Even though there is no official
-              dress code for Pantheon, wouldn't it look great when everyone is
-              wearing the colors of Pantheon.
+              dress code for Pantheon, wouldn&apos;t it look great when everyone
+              is wearing the colors of Pantheon.
             </AccordionBody>
           </Accordion>
           <Accordion open={open === 10} icon={<Icon id={10} open={open} />}>
