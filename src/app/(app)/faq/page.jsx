@@ -111,8 +111,8 @@ const Faq = () => {
             </AccordionHeader>
             <AccordionBody className="text-white">
               Anyone and everyone! Be it a student of BIT Mesra or your friend
-              from school or college. It's a haven for young minds to pursue
-              their knowledge and have fun, and all are duly welcomed.
+              from school or college. It&apos;s a haven for young minds to
+              pursue their knowledge and have fun, and all are duly welcomed.
             </AccordionBody>
           </Accordion>
           <Accordion open={open === 7} icon={<Icon id={7} open={open} />}>
@@ -186,8 +186,8 @@ const Faq = () => {
               Is there a food court or refreshment area at the venue??
             </AccordionHeader>
             <AccordionBody className="text-white">
-              There’ll be lots and varieties all at your own IC arena. Enjoy it
-              as you enjoy the fest.
+              There&apos;ll be lots and varieties all at your own IC arena.
+              Enjoy it as you enjoy the fest.
             </AccordionBody>
           </Accordion>
           <Accordion open={open === 12} icon={<Icon id={12} open={open} />}>
@@ -199,9 +199,10 @@ const Faq = () => {
             </AccordionHeader>
             <AccordionBody className="text-white">
               The stars have aligned and the sun has given a sign. But why spoil
-              the fun when you know the place to find. Let's meet at CAT HALL on
-              29th September 5 O'Clock in the Weekender event and find out where
-              this cosmic blend of a technical fest is going to take us.
+              the fun when you know the place to find. Let&apos;s meet at CAT
+              HALL on 29th September 5 O&apos;Clock in the Weekender event and
+              find out where this cosmic blend of a technical fest is going to
+              take us.
             </AccordionBody>
           </Accordion>
           <Accordion open={open === 13} icon={<Icon id={13} open={open} />}>

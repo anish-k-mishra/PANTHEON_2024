@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Input, Textarea, Typography } from "@material-tailwind/react";
+import Image from "next/image";
 
 export function ContactSection14() {
   return (
@@ -25,7 +26,7 @@ export function ContactSection14() {
           eager to hear from you.
         </Typography>
         <div className="grid grid-cols-1 gap-x-12 gap-y-6 lg:grid-cols-2 items-start">
-          <img
+          <Image
             src="/image/map.svg"
             alt="map"
             className="w-full h-full lg:max-h-[510px]"

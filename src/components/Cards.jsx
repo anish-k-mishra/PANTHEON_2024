@@ -30,7 +30,7 @@ export function Cards({ eventData, openModal }) {
       setIsLoggedIn(false);
     }
     console.log(isLoggedIn);
-  }, []);
+  }, [isLoggedIn]);
 
   const handleRegister = () => {
     if (isLoggedIn) {

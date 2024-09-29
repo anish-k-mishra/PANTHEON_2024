@@ -39,21 +39,22 @@ function About() {
               largest technical fests in Eastern India, is a true showcase of
               technological brilliance infused with vibrant youthful energy. As
               we move into the future, science and technology stand as the
-              backbone of societal progress. It's not just about innovation but
-              about how these advancements shape communities, improve lives, and
-              solve real-world problems.
+              backbone of societal progress. It&lsquo;s not just about
+              innovation but about how these advancements shape communities,
+              improve lives, and solve real-world problems.
             </p>
             <p className="ml-2 md:ml-6 mt-6 text-sm md:text-base">
-              Pantheon '24, with its theme "Science and Technology for Societal
-              Development," highlights the transformative role of cutting-edge
-              technologies in tackling the challenges of our time. From
-              sustainable solutions to groundbreaking healthcare innovations,
-              this fest celebrates the profound impact of science and technology
-              in creating a more inclusive, equitable, and progressive society.
-              As we venture into new frontiers, we recognize that the future of
-              society lies in the hands of those who harness knowledge for the
-              greater good. Let us embrace a future where technology not only
-              evolves but elevates humanity as a whole.
+              Pantheon &lsquo;24, with its theme &quot;Science and Technology
+              for Societal Development,&quot; highlights the transformative role
+              of cutting-edge technologies in tackling the challenges of our
+              time. From sustainable solutions to groundbreaking healthcare
+              innovations, this fest celebrates the profound impact of science
+              and technology in creating a more inclusive, equitable, and
+              progressive society. As we venture into new frontiers, we
+              recognize that the future of society lies in the hands of those
+              who harness knowledge for the greater good. Let us embrace a
+              future where technology not only evolves but elevates humanity as
+              a whole.
             </p>
           </div>
 
@@ -98,11 +99,11 @@ function About() {
               in India to establish a space and rocket division. The Small
               Enterprise Research and Development Organization (SIRDO) was
               founded in 1970, serving as a launchpad for SMEs led by BIT
-              graduates. This initiative was endorsed by India's Ministry of
-              Science and Technology and expanded to other premier institutions
-              like the IITs. BIT Mesra was also the first to establish a static
-              rocket test fire facility and to offer postgraduate programs in
-              collaboration with ISRO.
+              graduates. This initiative was endorsed by India&apos;s Ministry
+              of Science and Technology and expanded to other premier
+              institutions like the IITs. BIT Mesra was also the first to
+              establish a static rocket test fire facility and to offer
+              postgraduate programs in collaboration with ISRO.
             </p>
           </div>
         </div>
