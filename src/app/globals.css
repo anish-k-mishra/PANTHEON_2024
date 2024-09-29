@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+CNavbar {
+  position: fixed; /* Make it fixed */
+  top: 0; /* Stick to the top */
+  width: 100%; /* Full width */
+  z-index: 50; /* Ensure it's above other content */
+  pointer-events: auto; /* Ensure it can be clicked */
+}
