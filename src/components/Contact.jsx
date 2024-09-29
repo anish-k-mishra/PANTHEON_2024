@@ -5,7 +5,7 @@ import Image from "next/image";
 export function ContactSection14() {
   return (
     <section className="px-8 py-8 lg:py-16">
-      <div className="container mx-auto text-center">
+      <div className="container mx-auto text-center text-white">
         <Typography
           variant="h5"
           color="blue-gray"
@@ -20,12 +20,12 @@ export function ContactSection14() {
         >
           We&apos;re Here to Help
         </Typography>
-        <Typography className="mb-10 font-normal !text-lg lg:mb-20 mx-auto max-w-3xl !text-gray-500">
+        <Typography className="mb-10 font-normal !text-lg lg:mb-20 mx-auto max-w-3xl text-white">
           Whether it&apos;s a question about our services, a request for
           technical assistance, or suggestions for improvement, our team is
           eager to hear from you.
         </Typography>
-        <div className="grid grid-cols-1 gap-x-12 gap-y-6 lg:grid-cols-2 items-start">
+        <div className="grid grid-cols-1 gap-x-12 gap-y-6 lg:grid-cols-2 items-start text-white">
           <Image
             src="/image/map.svg"
             alt="map"
@@ -34,7 +34,7 @@ export function ContactSection14() {
           <form action="#" className="flex flex-col gap-4 lg:max-w-sm">
             <Typography
               variant="small"
-              className="text-left !font-semibold !text-gray-600"
+              className="text-left !font-semibold text-white"
             >
               Select Options for Business Engagement
             </Typography>
@@ -50,7 +50,7 @@ export function ContactSection14() {
               <div>
                 <Typography
                   variant="small"
-                  className="mb-2 text-left font-medium !text-gray-900"
+                  className="mb-2 text-left font-medium text-white"
                 >
                   First Name
                 </Typography>
@@ -71,7 +71,7 @@ export function ContactSection14() {
               <div>
                 <Typography
                   variant="small"
-                  className="mb-2 text-left font-medium !text-gray-900"
+                  className="mb-2 text-left font-medium text-white"
                 >
                   Last Name
                 </Typography>
@@ -93,7 +93,7 @@ export function ContactSection14() {
             <div>
               <Typography
                 variant="small"
-                className="mb-2 text-left font-medium !text-gray-900"
+                className="mb-2 text-left font-medium text-white"
               >
                 Your Email
               </Typography>
@@ -114,7 +114,7 @@ export function ContactSection14() {
             <div>
               <Typography
                 variant="small"
-                className="mb-2 text-left font-medium !text-gray-900"
+                className="mb-2 text-left font-medium text-white"
               >
                 Your Message
               </Typography>

@@ -370,7 +370,7 @@ const eventsDataDay2 = [
   },
   {
     title: "Wiki Wars",
-    image: "/assets/Wikiwars.jpg",
+    image: `https://res.cloudinary.com/ddjikayiy/image/upload/v1727577310/Pantheon24/cjmsvfsov8tnp9kwv0wf.jpg`,
     clubName: "BIOTS",
     timeSlots: ["10:00 AM - 03:00 PM"],
     location: "RnD Lab 5, 6",
@@ -425,7 +425,7 @@ const eventsDataDay2 = [
   },
   {
     title: "Mr. & Mrs. Pantheon",
-    image: `https://res.cloudinary.com/ddjikayiy/image/upload/v1727443194/MrAndMrsPantheon_usnlpn.jpg`,
+    image: `https://res.cloudinary.com/ddjikayiy/image/upload/v1727577638/Pantheon24/dv8xujk1lqe3wve8cbs7.jpg`,
 
     clubName: "Leo Club",
     timeSlots: [

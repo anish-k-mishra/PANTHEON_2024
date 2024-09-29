@@ -108,7 +108,7 @@ const ParallaxImages = () => {
         className="mx-auto w-2/3"
       /> */}
       <ParallaxImg
-        src="https://res.cloudinary.com/ddjikayiy/image/upload/v1727568247/Pantheon24/vfor8ni5m0eyl4ltyqfv.webp"
+        src="https://res.cloudinary.com/ddjikayiy/image/upload/v1727575347/Pantheon24/fllzfdhkeptpu8x3awit.jpg"
         alt="Orbiting satellite"
         start={-200}
         end={200}
