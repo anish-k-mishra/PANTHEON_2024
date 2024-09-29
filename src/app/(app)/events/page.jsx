@@ -76,7 +76,9 @@ const eventsDataDay1 = [
     title: "Bot Soccer",
     image: `https://res.cloudinary.com/ddjikayiy/image/upload/v1727443172/BotSoccer_g4a78q.jpg`,
     clubName: "EEE Society",
-    timeSlots: ["Round 1: 9:00AM-10:00AM  Round2: 10:00 AM - 05:00 PM"],
+    timeSlots: [
+      "Round 1: 9:00AM-10:00AM  Round2 (Bot Construction): 10:00 AM - 05:00 PM",
+    ],
     location: "Room 236 & 231",
     phone: "7977174961",
     coordinatorName: "Ashish Pandey",

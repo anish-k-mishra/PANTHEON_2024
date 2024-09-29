@@ -116,7 +116,7 @@ export function Login() {
             <button
               className="bg-gradient-to-br relative group/btn from-pink-800 to-purple-900 block w-full text-white rounded-md h-10 font-bold text-xl shadow-lg mb-2"
               type="submit"
-              onClick={() => toast.success("Login Successful!")}
+              onClick={() => toast.success("OTP Sent on your Email!")}
             >
               LOGIN &rarr;
               <BottomGradient />
