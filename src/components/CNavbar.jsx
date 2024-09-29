@@ -1,10 +1,7 @@
 import React, { useEffect, useState } from "react";
 import logoNavbar from "../assets/logo-navbar.png";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
-import p35 from "../assets/70_years.png";
-import p36 from "../assets/iic.png";
-
+import { useRouter } from 'next/navigation';
 import {
   Navbar,
   MobileNav,
@@ -67,52 +64,52 @@ function ProfileMenu({ isLoggedIn, setIsLoggedIn, setIsLoading }) {
               />
               <ChevronDownIcon
                 strokeWidth={2.5}
-                className={`h-3 w-3 transition-transform ${
-                  isMenuOpen ? "rotate-180" : ""
-                }`}
+                className={`h-3 w-3 transition-transform ${isMenuOpen ? "rotate-180" : ""
+                  }`}
               />
             </Button>
           </MenuHandler>
           <MenuList className="p-1">
-            {profileMenuItems.map(({ name, label, icon }, key) => {
-              const isLastItem = key === profileMenuItems.length - 1;
-              return (
-                <MenuItem
-                  key={key}
-                  onClick={() => {
-                    if (isLastItem) {
-                      setIsLoading(true);
-                      localStorage.removeItem("token");
-                      setIsLoggedIn(false);
-                      setTimeout(() => {
-                        router.push("/");
-                        setIsLoading(false);
-                      }, 1000);
-                    }
-                    closeMenu();
-                  }}
-                  className={`flex items-center gap-2 rounded ${
-                    isLastItem
-                      ? "hover:bg-red-500/10 focus:bg-red-500/10 active:bg-red-500/10"
-                      : ""
-                  }`}
-                >
-                  {React.createElement(icon, {
-                    className: `h-4 w-4 ${isLastItem ? "text-red-500" : ""}`,
-                    strokeWidth: 2,
-                  })}
-                  <Typography
-                    as="span"
-                    variant="small"
-                    className={`font-normal ${
-                      isLastItem ? "text-red-500" : ""
-                    }`}
-                  >
-                    {label}
-                  </Typography>
-                </MenuItem>
-              );
-            })}
+          {profileMenuItems.map(({ name, label, icon }, key) => {
+  const isLastItem = key === profileMenuItems.length - 1;
+  return (
+    <MenuItem
+      key={key}
+      onClick={() => {
+        if (isLastItem) {
+          setIsLoading(true);
+          localStorage.removeItem("token");
+          setIsLoggedIn(false);
+          setTimeout(() => {
+            router.push("/");
+            setIsLoading(false);
+          }, 1000);
+        } else if (name === "dashboard") {
+          router.push("/dashboard");
+        }
+        closeMenu();
+      }}
+      className={`flex items-center gap-2 rounded ${
+        isLastItem
+          ? "hover:bg-red-500/10 focus:bg-red-500/10 active:bg-red-500/10"
+          : ""
+      }`}
+    >
+      {React.createElement(icon, {
+        className: `h-4 w-4 ${isLastItem ? "text-red-500" : ""}`,
+        strokeWidth: 2,
+      })}
+      <Typography
+        as="span"
+        variant="small"
+        className={`font-normal ${isLastItem ? "text-red-500" : ""}`}
+      >
+        {label}
+      </Typography>
+    </MenuItem>
+  );
+})}
+
           </MenuList>
         </Menu>
       )}
@@ -128,10 +125,11 @@ const navListItems = (isLoggedIn) => [
   { name: "faq", label: "FAQs", icon: CubeTransparentIcon },
   { name: "events", label: "Events", icon: CodeBracketSquareIcon },
   {
-    name: isLoggedIn ? "team" : "create",
+    name: isLoggedIn ? "joinTeam" : "create",
     label: isLoggedIn ? "Join Team" : "Sign Up",
     icon: CodeBracketSquareIcon,
   },
+  { name: "archives", label: "Archives", icon: CodeBracketSquareIcon },
 ];
 
 function NavList({ isLoggedIn, setIsLoggedIn, setIsNavOpen, isMobileView }) {
@@ -192,19 +190,9 @@ export function CNavbar() {
         </div>
       )}
 
-      <Navbar
-        className="mx-auto max-w-screen-xl p-2 rounded-none md:rounded-full lg:pl-6 lg:mt-2"
-        style={{ marginTop: 0 }}
-      >
+      <Navbar className="mx-auto max-w-screen-xl p-2 rounded-none md:rounded-full lg:pl-6 lg:mt-2">
         <div className="relative mx-auto flex items-center justify-between text-blue-gray-900">
-          <div className="flex">
-            <Link href="/">
-              <Image src={logoNavbar} alt="logo" height={50} width={50} />
-            </Link>
-            <Image src={p35} alt="logo" height={50} width={50} />
-            <Image src={p36} alt="logo" height={50} width={50} />
-          </div>
-
+          <Image src={logoNavbar} alt="logo" height={50} width={50} />
           <div className="hidden lg:block">
             <NavList
               isLoggedIn={isLoggedIn}
