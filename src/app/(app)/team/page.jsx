@@ -2,7 +2,7 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { Toaster, toast } from "react-hot-toast";
-import { BackgroundLines } from "../../../components/ui/CreateFormBg";
+// Removed BackgroundLines import
 import { cn } from "../../../lib/utils";
 import { jwtDecode } from "jwt-decode";
 
@@ -10,10 +10,9 @@ export default function Page() {
   const router = useRouter();
 
   return (
-    <div className="relative lg:-mt-10 sm:mt-15 flex flex-col md:flex-row justify-evenly items-center gap-10 min-h-screen md:gap-4">
+    <div className=" lg:-mt-10 sm:mt-15 flex flex-col md:flex-row justify-evenly items-center gap-10 min-h-screen md:gap-4">
       <Toaster position="top-center" reverseOrder={false} />
-      <BackgroundLines className="absolute inset-0 -z-10" />{" "}
-      {/* Ensure it stays in the background */}
+      {/* Removed BackgroundLines component */}
       <CreateTeam
         gradientClass="from-pink-800 to-purple-900"
         title="CREATE TEAM!"
@@ -44,7 +43,7 @@ function CreateTeam({
 }) {
   const router = useRouter();
   const token = localStorage.getItem("token");
-  const [formData, setFormData] = useState({ teamName: isJoinForm ? "" : "" }); // Handle different form data for joining
+  const [formData, setFormData] = useState({ teamName: isJoinForm ? "" : "" });
 
   // Check if the user is authenticated
   if (!token) {
